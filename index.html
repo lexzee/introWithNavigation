@@ -14,14 +14,17 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  <header id="header">
+<body class="bg-almostWhite relative">
+  <header id="header" class="container flex flex-row m-6 justify-between">
     <!-- Navigation Container -->
     <nav id="navigation">
-      <!-- Logo and navigation container -->
-      <section id="logoNav">
+      <!-- Logo and Menu container -->
+      <!-- <section id="logo"> -->
         <!-- Logo -->
         <img src="images/logo.svg" alt="Snap's Logo" id="logo"/>
+      <!-- </section> -->
+      <!-- Menu -->
+      <section id="menu" class="hidden float-right">
         <!-- Navigations -->
         <section id="nav">
           <p>Features</p>
@@ -29,11 +32,11 @@
           <p>Careers</p>
           <p>About</p>
         </section>
-      </section>
-      <!-- CTA's container -->
-      <section id="cta">
-        <button id="login">Login</button>
-        <button id="reg">Register</button>
+        <!-- CTA's -->
+        <section id="cta">
+          <button id="login">Login</button>
+          <button id="reg">Register</button>
+        </section>
       </section>
     </nav>
   </header>
@@ -41,25 +44,24 @@
   <section id="main">
     <!-- Hero Section -->
     <section id="Hero">
-      <img src="images/image-hero-desktop.png" alt="Hero Image" id="main">
+      <img src="images/image-hero-mobile.png" alt="Hero Image" id="main">
     </section>
     <!-- Desription -->
-    <section id="body">
+    <section id="body" class="m-6 space-y-12">
       <!-- Texts and CTA -->
-      <section id="textCTA">
-        <h1>
+      <section id="textCTA"  class="flex flex-col align-center text-center space-y-6 mt-12">
+        <h1 class="font-epilogue text-5xl">
           Make remote work
         </h1>
-        <p>
-          Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+        <p class=text-mediumGray>
+          Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
         </p>
-        <button>
+        <button class="bg-almostBlack text-almostWhite border rounded-xl h-auto p-6 w-auto mx-auto">
           Learn more
         </button>
       </section>
       <!-- Partners -->
-      <section id="partners">
+      <section id="partners" class="flex flex-row justify-around mx-6">
         <img src="images/client-databiz.svg" alt="DataBiz logo" class="partner">
         <img src="images/client-audiophile.svg" alt="AudioPhile logo" class="partner">
         <img src="images/client-meet.svg" alt="Meet logo" class="partner">
@@ -71,7 +73,7 @@
   <footer id="footer">
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.github.com/lexzee">Lexzee</a>.
     </div>
   </footer>
 </body>
