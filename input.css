@@ -16,11 +16,17 @@
     font-family: 'Epilogue', sans-serif, system-ui;
   }
 } */
-
+body{
+  background-color: hsl(0, 0%, 98%);
+  margin: auto;
+}
 #header{
     display: relative;
 }
-
+a{
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
 nav {
     display: flex;
     flex-direction: column;
@@ -28,7 +34,7 @@ nav {
 }
 #logo{
     justify-content: space-between;
-    /* display: inline-block; */
+    display: inline-block;
 
 }
 #menu-btn{
@@ -47,17 +53,135 @@ nav {
     align-items: center;
     text-align: center;
 }
+#hero img{
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+#textCTA{
+  margin: 4em auto;
+}
 #textCTA h1{
     /* text-align: center; */
-    font-size: 3em;
+    font-size: 3.5em;
     margin: 0;
 }
 #textCTA p{
     font-size: 18px;
+    color: hsl(0, 0%, 41%);
+    margin-bottom: 1.5em;
 }
 #textCTA button{
-    padding: 1em;
+    font-size: 18px;
+    padding: 1em 1.5em;
     color: white;
     background-color: black;
-    border: 1px solid blue 50%;
+    border-radius: 1em;
+}
+#textCTA button:hover{
+  background-color: transparent;
+  color: black;
+  border-color: black;
+}
+.partner{
+  flex-direction: row;
+  justify-self: between;
+  margin-right: 2.25em;
+  margin-bottom: 3em;
+}
+#hero2{
+  display: none;
+}
+#hero1{
+  display: inline;
+}
+
+
+.nav-2{
+  position: relative;
+  display: flex;
+  flex-basis: column nowrap;
+}
+@media (min-width: 768px){
+  #menu-btn{
+    display: none;
+  }
+  nav{
+    flex-direction: row;
+  }
+  hero{
+    padding: 3em auto 3em 3em;
+  }
+  #menu{
+    display: flex;
+    flex-direction: row;
+    flex: 2 1 auto;
+    justify-content: space-between;
+    margin: auto 2em;
+    align-content: center;
+  }
+  .navLink{
+    margin-right: 2em;
+  }
+  .navLink:hover{
+    color: hsl(0, 0%, 8%);
+  }
+  #menu #cta{
+    
+  }
+  #login{
+    background: none;
+    border: none;
+    margin-right: 2em;
+  }
+  #reg{
+    box-sizing: border-box;
+    padding: 1em 2em;
+    background: none;
+    border-color: black;
+    border-radius: 3em;
+  }
+  #reg:hover{
+    transform: scale(1.2);
+  }
+  
+  #main{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-content: center;
+    margin: auto 15%;
+  }
+  
+  #textCTA{
+    margin: auto auto;
+    padding-right: 1em;
+    text-align: left;
+    position: relative;
+  }
+  #textCTA h1{
+    /* text-align: center; */
+    font-size: 3.5em;
+    margin-bottom: 1.5rem;
+    /* padding-right: 2%; */
+  }
+  #textCTA p{
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+    margin-bottom: 1.5em;
+  }
+  .partner{
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+    margin-right: .2em;
+    /* margin-top: .5em; */
+    float: left;
+  }
+  
+  #hero2{
+    display: inline;
+  }
+  #hero1{
+    display: none;
+  }
 }

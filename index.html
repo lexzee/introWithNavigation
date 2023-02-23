@@ -23,7 +23,7 @@
       <section id="logo">
         <!-- Logo -->
         <img src="images/logo.svg" alt="Snap's Logo" id="logo"/>
-        <img id="menu-btn" onclick="this.srcList.toggle='images/icon-close-menu.svg'" src="images/icon-menu.svg" alt="menu">
+        <img id="menu-btn" onclick="this.src='images/icon-close-menu.svg'" src="images/icon-menu.svg" alt="menu">
       </section>
       <!-- Menu -->
       <section class="flex md:hidden">
@@ -34,10 +34,19 @@
       <section id="menu">
         <!-- Navigations -->
         <section id="nav">
-          <a href="#">Features</a>
-          <a href="#">Company</a>
-          <a href="#">Careers</a>
-          <a href="#">About</a>
+          <section id="featCont">
+            <a href="#" class="navLink">Features <img src="images/icon-arrow-down.svg"/></a>
+            <!-- nested nav -->
+            <nav class="nav-2">
+              <a href="#" class="nav2"><img src="images/icon-todo.svg"/> Todo List</a>
+              <a href="#" class="nav2"><img src="images/icon-calendar.svg"/> Calendar</a>
+              <a href="#" class="nav2"><img src="images/icon-reminders.svg"/> Reminders</a>
+              <a href="#" class="nav2"><img src="images/icon-planning.svg"/> Planning</a>
+            </nav>
+          </section>
+          <a href="#" class="navLink">Company <img src="images/icon-arrow-down.svg"/></a>
+          <a href="#" class="navLink">Careers</a>
+          <a href="#" class="navLink">About</a>
         </section>
         <!-- CTA's -->
         <section id="cta">
@@ -50,8 +59,9 @@
   <!-- Main Body -->
   <section id="main">
     <!-- Hero Section -->
-    <section id="Hero">
-      <img src="images/image-hero-mobile.png" alt="Hero Image" id="main">
+    <section id="hero">
+      <img id="hero1" src="images/image-hero-mobile.png" alt="Hero Image">
+      <img id="hero2" src="images/image-hero-desktop.png" alt="Hero Image">
     </section>
     <!-- Desription -->
     <section id="body">
@@ -69,10 +79,10 @@
       </section>
       <!-- Partners -->
       <section id="partners">
-        <img src="images/client-databiz.svg" alt="DataBiz logo" class="partner">
-        <img src="images/client-audiophile.svg" alt="AudioPhile logo" class="partner">
-        <img src="images/client-meet.svg" alt="Meet logo" class="partner">
-        <img src="images/client-maker.svg" alt="Maker logo" class="partner">
+        <a href="#"><img src="images/client-databiz.svg" alt="DataBiz logo" class="partner"></a>
+        <a href="#"><img src="images/client-audiophile.svg" alt="AudioPhile logo" class="partner"></a>
+        <a href="#"><img src="images/client-meet.svg" alt="Meet logo" class="partner"></a>
+        <a href="#"><img src="images/client-maker.svg" alt="Maker logo" class="partner"></a>
       </section>
     </section>
   </section>
