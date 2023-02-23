@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./main.css">
+  
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,23 +18,29 @@
 <body class="bg-almostWhite relative">
   <header id="header" class="container flex flex-row m-6 justify-between">
     <!-- Navigation Container -->
-    <nav id="navigation">
+    <nav id="flex flex-row navigation">
       <!-- Logo and Menu container -->
-      <!-- <section id="logo"> -->
+      <section id=" flex logo">
         <!-- Logo -->
         <img src="images/logo.svg" alt="Snap's Logo" id="logo"/>
-      <!-- </section> -->
+      </section>
       <!-- Menu -->
-      <section id="menu" class="hidden float-right">
+      <section class="flex md:hidden">
+        <!-- <button class="flex bg-menu-open bg-norepeat bg-object-fill items-center px-3 py-2 h-6 w-6">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button> -->
+        <img id="menu-btn" onclick="this.src.toggle='images/icon-close-menu.svg'" src="images/icon-menu.svg" alt="menu">
+      </section>
+      <section id="flex menu" class="">
         <!-- Navigations -->
-        <section id="nav">
+        <section id="nav" class="">
           <p>Features</p>
           <P>Company</P>
           <p>Careers</p>
           <p>About</p>
         </section>
         <!-- CTA's -->
-        <section id="cta">
+        <section id="cta" class="flex flex-col">
           <button id="login">Login</button>
           <button id="reg">Register</button>
         </section>
@@ -76,6 +83,9 @@
       Coded by <a href="https://www.github.com/lexzee">Lexzee</a>.
     </div>
   </footer>
+  <script src="./script.js">
+    
+  </script>
 </body>
 
 </html>
