@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./input.css">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -15,32 +15,32 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="bg-almostWhite relative">
-  <header id="header" class="container flex flex-row m-6 justify-between">
+<body>
+  <header id="header">
     <!-- Navigation Container -->
-    <nav id="flex flex-row navigation">
+    <nav id="navigation">
       <!-- Logo and Menu container -->
-      <section id=" flex logo">
+      <section id="logo">
         <!-- Logo -->
         <img src="images/logo.svg" alt="Snap's Logo" id="logo"/>
+        <img id="menu-btn" onclick="this.srcList.toggle='images/icon-close-menu.svg'" src="images/icon-menu.svg" alt="menu">
       </section>
       <!-- Menu -->
       <section class="flex md:hidden">
         <!-- <button class="flex bg-menu-open bg-norepeat bg-object-fill items-center px-3 py-2 h-6 w-6">
           <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
         </button> -->
-        <img id="menu-btn" onclick="this.src.toggle='images/icon-close-menu.svg'" src="images/icon-menu.svg" alt="menu">
       </section>
-      <section id="flex menu" class="">
+      <section id="menu">
         <!-- Navigations -->
-        <section id="nav" class="">
-          <p>Features</p>
-          <P>Company</P>
-          <p>Careers</p>
-          <p>About</p>
+        <section id="nav">
+          <a href="#">Features</a>
+          <a href="#">Company</a>
+          <a href="#">Careers</a>
+          <a href="#">About</a>
         </section>
         <!-- CTA's -->
-        <section id="cta" class="flex flex-col">
+        <section id="cta">
           <button id="login">Login</button>
           <button id="reg">Register</button>
         </section>
@@ -54,21 +54,21 @@
       <img src="images/image-hero-mobile.png" alt="Hero Image" id="main">
     </section>
     <!-- Desription -->
-    <section id="body" class="m-6 space-y-12">
+    <section id="body">
       <!-- Texts and CTA -->
-      <section id="textCTA"  class="flex flex-col align-center text-center space-y-6 mt-12">
-        <h1 class="font-epilogue text-5xl">
+      <section id="textCTA">
+        <h1>
           Make remote work
         </h1>
         <p class=text-mediumGray>
           Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
         </p>
-        <button class="bg-almostBlack text-almostWhite border rounded-xl h-auto p-6 w-auto mx-auto">
+        <button>
           Learn more
         </button>
       </section>
       <!-- Partners -->
-      <section id="partners" class="flex flex-row justify-around mx-6">
+      <section id="partners">
         <img src="images/client-databiz.svg" alt="DataBiz logo" class="partner">
         <img src="images/client-audiophile.svg" alt="AudioPhile logo" class="partner">
         <img src="images/client-meet.svg" alt="Meet logo" class="partner">

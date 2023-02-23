@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -15,4 +15,49 @@
   html {
     font-family: 'Epilogue', sans-serif, system-ui;
   }
+} */
+
+#header{
+    display: relative;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 5%;
+}
+#logo{
+    justify-content: space-between;
+    /* display: inline-block; */
+
+}
+#menu-btn{
+    float: right;
+}
+#menu{
+    display: none;
+}
+
+#main{
+    display: relative;
+}
+#body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#textCTA h1{
+    /* text-align: center; */
+    font-size: 3em;
+    margin: 0;
+}
+#textCTA p{
+    font-size: 18px;
+}
+#textCTA button{
+    padding: 1em;
+    color: white;
+    background-color: black;
+    border: 1px solid blue 50%;
 }
