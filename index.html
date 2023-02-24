@@ -26,32 +26,68 @@
         <img id="menu-btn" onclick="this.src='images/icon-close-menu.svg'" src="images/icon-menu.svg" alt="menu">
       </section>
       <!-- Menu -->
-      <section class="flex md:hidden">
-        <!-- <button class="flex bg-menu-open bg-norepeat bg-object-fill items-center px-3 py-2 h-6 w-6">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-        </button> -->
-      </section>
-      <section id="menu">
-        <!-- Navigations -->
+      <section id="menu" class="hidden">
+        <!-- Navigations desktop -->
         <section id="nav">
-          <section id="featCont">
-            <a href="#" class="navLink">Features <img src="images/icon-arrow-down.svg"/></a>
-            <!-- nested nav -->
-            <nav class="nav-2">
-              <a href="#" class="nav2"><img src="images/icon-todo.svg"/> Todo List</a>
-              <a href="#" class="nav2"><img src="images/icon-calendar.svg"/> Calendar</a>
-              <a href="#" class="nav2"><img src="images/icon-reminders.svg"/> Reminders</a>
-              <a href="#" class="nav2"><img src="images/icon-planning.svg"/> Planning</a>
-            </nav>
+            <a href="#" class="navLink feature">Features <img src="images/icon-arrow-down.svg"/>
+              <section id="n1" class="subnav n1 hidden">
+              <nav class="nav-2">
+                <a href="#" class="nav2"><span><img src="images/icon-todo.svg"/> Todo List</span></a>
+                <a href="#" class="nav2"><span><img src="images/icon-calendar.svg"/> Calendar</span></a>
+                <a href="#" class="nav2"><span><img src="images/icon-reminders.svg"/> Reminders</span></a>
+                <a href="#" class="nav2"><span><img src="images/icon-planning.svg"/> Planning</span></a>
+              </nav>
+              </section>
+            </a>
+            <a href="#" class="navLink company">Company <img src="images/icon-arrow-down.svg"/>
+              <section id="n2" class="subnav n2 hidden">
+              <nav class="nav-2">
+                <a href="#" class="nav2">History</a>
+                <a href="#" class="nav2">Our Team</a>
+                <a href="#" class="nav2">Blog</a>
+              </nav>
+              </section>
+            </a>
+            <a href="#" class="navLink">Careers</a>
+            <a href="#" class="navLink">About</a>
           </section>
-          <a href="#" class="navLink">Company <img src="images/icon-arrow-down.svg"/></a>
-          <a href="#" class="navLink">Careers</a>
-          <a href="#" class="navLink">About</a>
-        </section>
-        <!-- CTA's -->
-        <section id="cta">
-          <button id="login">Login</button>
-          <button id="reg">Register</button>
+          <!-- CTA's -->
+          <section id="cta">
+            <button id="login">Login</button>
+            <button id="reg">Register</button>
+          </section>
+      </section>
+      <section id="menuM" class="hidden">
+        <!-- Navigations mobile-->
+        <section id="menuCont"> 
+          <section id="nav1">
+            <a href="#" class="navLink1 feature1">Features <img src="images/icon-arrow-down.svg"/>
+              <!-- <section id="m1" class="subnav m1 hidden"> -->
+              <nav id="m1" class="nav-m hidden">
+                <a href="#" class="navm"><span><img src="images/icon-todo.svg"/> Todo List</span></a>
+                <a href="#" class="navm"><span><img src="images/icon-calendar.svg"/> Calendar</span></a>
+                <a href="#" class="navm"><span><img src="images/icon-reminders.svg"/> Reminders</span></a>
+                <a href="#" class="navm"><span><img src="images/icon-planning.svg"/> Planning</span></a>
+              </nav>
+              <!-- </section> -->
+            </a>
+            <a href="#" class="navLink1 company1">Company <img src="images/icon-arrow-down.svg"/>
+              <!-- <section id="m2" class="subnav m2 hidden"> -->
+              <nav id="m2" class="nav-m hidden">
+                <a href="#" class="navm">History</a>
+                <a href="#" class="navm">Our Team</a>
+                <a href="#" class="navm">Blog</a>
+              </nav>
+              <!-- </section> -->
+            </a>
+            <a href="#" class="navLink1">Careers</a>
+            <a href="#" class="navLink1">About</a>
+          </section>
+          <!-- CTA's -->
+          <section id="cta">
+            <button id="login">Login</button>
+            <button id="reg">Register</button>
+          </section>
         </section>
       </section>
     </nav>
@@ -67,23 +103,33 @@
     <section id="body">
       <!-- Texts and CTA -->
       <section id="textCTA">
-        <h1>
-          Make remote work
-        </h1>
-        <p class=text-mediumGray>
-          Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
-        </p>
-        <button>
-          Learn more
-        </button>
+        <section>
+          <h1>
+            Make remote work
+          </h1>
+          <p class=text-mediumGray>
+            Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+          </p>
+        </section>
+        <section>
+          <button>
+            Learn more
+          </button>
+        </section>
+        <section id="partners">
+        <a href="#"><img src="images/client-databiz.svg" alt="DataBiz logo" class="partner" width="auto"></a>
+        <a href="#"><img src="images/client-audiophile.svg" alt="AudioPhile logo" class="partner" width="auto"></a>
+        <a href="#"><img src="images/client-meet.svg" alt="Meet logo" class="partner" width="auto"></a>
+        <a href="#"><img src="images/client-maker.svg" alt="Maker logo" class="partner" width="auto"></a>
+      </section>
       </section>
       <!-- Partners -->
-      <section id="partners">
-        <a href="#"><img src="images/client-databiz.svg" alt="DataBiz logo" class="partner"></a>
-        <a href="#"><img src="images/client-audiophile.svg" alt="AudioPhile logo" class="partner"></a>
-        <a href="#"><img src="images/client-meet.svg" alt="Meet logo" class="partner"></a>
-        <a href="#"><img src="images/client-maker.svg" alt="Maker logo" class="partner"></a>
-      </section>
+      <!-- <section id="partners">
+        <a href="#"><img src="images/client-databiz.svg" alt="DataBiz logo" class="partner" width="auto"></a>
+        <a href="#"><img src="images/client-audiophile.svg" alt="AudioPhile logo" class="partner" width="auto"></a>
+        <a href="#"><img src="images/client-meet.svg" alt="Meet logo" class="partner" width="auto"></a>
+        <a href="#"><img src="images/client-maker.svg" alt="Maker logo" class="partner" width="auto"></a>
+      </section> -->
     </section>
   </section>
 
@@ -94,7 +140,7 @@
     </div>
   </footer>
   <script src="./script.js">
-    
+  
   </script>
 </body>
 
